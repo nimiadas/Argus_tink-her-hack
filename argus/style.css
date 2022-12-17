@@ -21,4 +21,34 @@ font-family: sans-serif;
     font-size: 20px;
     letter-spacing: 0.5em;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 39, 51, 0),rgba(0, 46, 51, 0.9)),url(images/search.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 0x;
+    background: rgba(255, 255, 255, 0.589);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+.search-bar{
+    background-color: whitesmoke;
+    flex: 0;
+    border: 70px;
+    outline: rgba(45, 82, 162, 0.521);
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
     
