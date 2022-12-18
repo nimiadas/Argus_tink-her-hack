@@ -26,9 +26,31 @@
     </div>
     <div class="container">
         <form action="" class="search-bar">
-            <input type="text" placeholder="enter the link" name="box">
-            <button type="enter"><img src="images/search.png"></button>
+            <input id="url_input"type="text" placeholder="enter the link" name="box">
+            <button type="button"onclick="checkUrl()"><img src="images/search.png"></button>
+            <p id="result"></p>
         </form>
+        <script>
+      function checkUrl() {
+        const isSecure = (url) => {
+          if (url !== "") {
+            let protocol = url.split(":")[0];
+            if (protocol === "https") return 1;
+            else if (protocol === "http") return 0;
+            else -1;
+          } else {
+            return -1;
+          }
+        };
+        const result = document.getElementById("result");
+        const text = document.getElementById("url_input").value;
+        if (isSecure(text) === 1) {
+          result.innerText = "This link is safe to use";
+        } else if (isSecure(text) === 0) {
+          result.innerText = "This link is not safe to use";
+        } else result.innerText = "Invalid input!";
+      }
+      </script>
         <div class="nav">
             <label><MEnu></MEnu></label>
             <ul>
