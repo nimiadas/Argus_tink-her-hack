@@ -21,3 +21,5 @@ A scam detection websites which checks the scam link and prints the message whet
 * **Argus** website considers only this difference to check. 
 ## Screenshot
 ![Screenshot (5)](https://user-images.githubusercontent.com/98536732/208284474-da1b8768-1781-4a37-a9fe-f613f1d66d07.png)
+![Screenshot (6)](https://user-images.githubusercontent.com/98536732/208284524-5c1f9d68-b186-4efa-b4f1-9cf838b94f76.png)
+![Screenshot (7)](https://user-images.githubusercontent.com/98536732/208284525-9d379e52-1ced-46f5-a64a-254ec24bd3ab.png)
