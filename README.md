@@ -1,6 +1,6 @@
 # Argus_the scam link checker
 
-A scam detection websites which checks the scam link and prints the message whether the given link is safe or unsafe.
+A scam detection website which checks the scam link and prints the message whether the given link is safe or unsafe.
 ## Stacks used
 * Javascript
 * HTML
