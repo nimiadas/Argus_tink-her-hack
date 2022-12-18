@@ -20,3 +20,4 @@ A scam detection websites which checks the scam link and prints the message whet
 * This difference is implemented in our project.This website distinguish between safe and unsafe link by checking whether https or http is present. 
 * **Argus** website considers only this difference to check. 
 ## Screenshot
+![Screenshot (5)](https://user-images.githubusercontent.com/98536732/208284474-da1b8768-1781-4a37-a9fe-f613f1d66d07.png)
