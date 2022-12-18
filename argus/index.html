@@ -6,66 +6,49 @@
     <meta name="viewport" content="width=>>, initial-scale=1.0">
     
     <title>tinkerhack_argus</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css_sample.css">
+    <script src="myscript.js"></script>
 </head>
 <body>
-    
     <div class="basics">
         <img src="C:\Users\nimia\OneDrive\Desktop\argus\images\logo.png" claas="logo">
     </div>
-
     <div class="header">
         <h1>ARGUS</h1>
     </div>
 <h2 class="sub_head">the vigilant guardian</h2>
-    <div class="container"> 
-        <form action="" class="search-bar">
-            <input type="text" placeholder="enter the link" name="box">
-            <button type="submit"><img src="C:\Users\nimia\OneDrive\Desktop\argus\images\search_icon.png"></button>
-        </form>
-    </div>
-    <div class="container">
-        <form action="" class="search-bar">
-            <input id="url_input"type="text" placeholder="enter the link" name="box">
-            <button type="button"onclick="checkUrl()"><img src="images/search.png"></button>
-            <p id="result"></p>
-        </form>
-        <script>
-      function checkUrl() {
-        const isSecure = (url) => {
-          if (url !== "") {
-            let protocol = url.split(":")[0];
-            if (protocol === "https") return 1;
-            else if (protocol === "http") return 0;
-            else -1;
-          } else {
-            return -1;
-          }
-        };
-        const result = document.getElementById("result");
-        const text = document.getElementById("url_input").value;
-        if (isSecure(text) === 1) {
-          result.innerText = "This link is safe to use";
-        } else if (isSecure(text) === 0) {
-          result.innerText = "This link is not safe to use";
-        } else result.innerText = "Invalid input!";
-      }
-      </script>
-        <div class="nav">
-            <label><MEnu></MEnu></label>
-            <ul>
-                <li><a class="none" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-    
-    
-    
-    </div>
+<h2 class="sub_head_1">spam link detector</h2>
+<div class="container">
+    <form action="" class="search-bar">
+        <input id="url_input" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;enter the link" name="box">
+        <button id="button_search" type="button"onclick="checkUrl()"><img src="C:\Users\nimia\OneDrive\Desktop\argus\images\search_icon.png"></button>
+        <p id="result"></p>
+        
+    </form>
+    <script>
+        function checkUrl() {
+          const isSecure = (url) => {
+            if (url !== "") {
+              let protocol = url.split(":")[0];
+              if (protocol === "https") return 1;
+              else if (protocol === "http") return 0;
+              else -1;
+            } else {
+              return -1;
+            }
+          };
+          const result = document.getElementById("result");
+          const text = document.getElementById("url_input").value;
+          if (isSecure(text) === 1) {
+            result.innerText = "This link is safe to use";
+          } else if (isSecure(text) === 0) {
+            result.innerText = "This link is not safe to use";
+          } else result.innerText = "Invalid input!";
+        }
+        </script>
+         </div>
     
        
     
-</body>
-</html>
+        </body>
+        </html>
