@@ -59,6 +59,9 @@
         margin-left: 875px;
         margin-bottom: 45px;
     }
+     #button_search img{
+       margin-right: 375px;
+     } 
     .search-bar{
         background-color: transparent;
         flex: 0.1cm;
